@@ -31,7 +31,7 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
   
-            <receiver android:name="com.red_folder.phonegap.plugin.backgroundservice.BootReceiver">
+            <receiver android:name="com.red_folder.phonegap.plugin.backgroundservice.BootReceiver" android:exported="false">
                 <intent-filter>     
                     <action android:name="android.intent.action.BOOT_COMPLETED"></action>   
                 </intent-filter> 
